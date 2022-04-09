@@ -36,7 +36,7 @@ router.get('/numeros-primos', function(req, res, next) {
       }
       indice++;
     }
-    console.log(arrayDePrimos.reverse())
+    console.log(arrayDePrimos.reverse().join());
     res.send(arrayDePrimos.join());
   }
 });
