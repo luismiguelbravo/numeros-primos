@@ -17,7 +17,7 @@ npm start
 | http://localhost:3000/numeros-primos?maximo=7 | { numerosPrimos: '7,5,3,2' } |
 | http://localhost:3000/numeros-primos?maximo=15 | { numerosPrimos: '13,11,7,5,3,2' } |
 | http://localhost:3000/numeros-primos?maximo=asdf | { error: "El parámetro de entrada no es un número" } |
-| http://localhost:3000/numeros-primos?maximo=1 | { error: "El parámetro de entrada no es un número" } |
+| http://localhost:3000/numeros-primos?maximo=1 | { error: "El número de entrada debe ser mayor o igual a 2" } |
 | http://localhost:3000/numeros-primos?maximo=0 | { error: "El parámetro de entrada no es un número" } |
 | http://localhost:3000/numeros-primos?maximo=-1 | { error: "El parámetro de entrada no es un número" } |
 
@@ -44,6 +44,6 @@ docker run -d -p 8080:3000 expressapp/node
 | http://localhost:8080/numeros-primos?maximo=7 | { numerosPrimos: '7,5,3,2' } |
 | http://localhost:8080/numeros-primos?maximo=15 | { numerosPrimos: '13,11,7,5,3,2' } |
 | http://localhost:8080/numeros-primos?maximo=asdf | { error: "El parámetro de entrada no es un número" } |
-| http://localhost:8080/numeros-primos?maximo=1 | { error: "El parámetro de entrada no es un número" } |
+| http://localhost:8080/numeros-primos?maximo=1 | { error: "El número de entrada debe ser mayor o igual a 2" } |
 | http://localhost:8080/numeros-primos?maximo=0 | { error: "El parámetro de entrada no es un número" } |
 | http://localhost:8080/numeros-primos?maximo=-1 | { error: "El parámetro de entrada no es un número" } |
