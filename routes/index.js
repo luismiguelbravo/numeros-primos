@@ -31,13 +31,13 @@ router.get('/numeros-primos', function(req, res, next) {
     let arrayDePrimos = [];
     let indice = 2;
     while (indice <= numeroMaximo ) {
-      console.log(esPrimo);
       if (esPrimo(indice)) {
         arrayDePrimos[arrayDePrimos.length] = indice;
       }
       indice++;
     }
-    res.json({ "arrayDePrimos": arrayDePrimos.reverse() });
+    console.log(arrayDePrimos.reverse())
+    res.send(arrayDePrimos);
   }
 });
 
