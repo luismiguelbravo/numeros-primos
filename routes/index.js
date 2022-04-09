@@ -27,17 +27,18 @@ router.get('/numeros-primos', function(req, res, next) {
   } else {
     if (maximo < 2 ) {
       res.status(500).json({ error: "El número de entrada debe ser mayor o igual a 2" });
-    }
-    let arrayDePrimos = [];
-    let indice = 2;
-    while (indice <= maximo ) {
-      if (esPrimo(indice)) {
-        arrayDePrimos[arrayDePrimos.length] = indice;
+    } else {
+      let arrayDePrimos = [];
+      let indice = 2;
+      while (indice <= maximo ) {
+        if (esPrimo(indice)) {
+          arrayDePrimos[arrayDePrimos.length] = indice;
+        }
+        indice++;
       }
-      indice++;
-    }
-    console.log(arrayDePrimos.reverse().join());
-    res.json({ 'numerosPrimos': arrayDePrimos.join()});
+      console.log(arrayDePrimos.reverse().join());
+      res.json({ 'numerosPrimos': arrayDePrimos.join()});
+     }
   }
 });
 
