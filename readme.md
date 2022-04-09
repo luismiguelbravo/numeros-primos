@@ -2,12 +2,12 @@
 
 Instalar el proyecto
 ```sh
-$ npm i
+npm i
 ```
 
 Iniciar el proyecto
 ```sh
-$ npm start
+npm start
 ```
 
 # Rutas para probar
@@ -23,5 +23,5 @@ $ npm start
 
 Ejecutar los test:
 ```sh
-$ npm run test
+npm run test
 ```
