@@ -48,3 +48,8 @@ docker run -d -p 8080:3000 expressapp
 | http://localhost:8080/numeros-primos?maximo=1 | { error: "El número de entrada debe ser mayor o igual a 2" } |
 | http://localhost:8080/numeros-primos?maximo=0 | { error: "El número de entrada debe ser mayor o igual a 2" } |
 | http://localhost:8080/numeros-primos?maximo=-1 | { error: "El número de entrada debe ser mayor o igual a 2" } |
+
+
+# Docker image url
+
+https://hub.docker.com/r/luismiguelbravo/numeros-primos
