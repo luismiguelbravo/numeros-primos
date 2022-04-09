@@ -29,10 +29,14 @@ npm run test
 # Instrucciones de instalación con Docker
 
 Construir imagen docker
+```sh
 docker build -f Dockerfile -t expressapp/node .
+```
 
 ejecutar imagen docker
+```sh
 docker run -d -p 8080:3000 expressapp/node
+```
 
 # Rutas para probar con Docker
 | url | resultado esperado |
