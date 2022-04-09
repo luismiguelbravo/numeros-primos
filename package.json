@@ -5,7 +5,7 @@
   "scripts": {
     "start-old": "node ./bin/www",
     "start": "nodemon ./bin/www",
-    "test": "jest --watch --verbose"
+    "test": "jest --verbose"
   },
   "jest": {
     "testEnvironment": "node",
