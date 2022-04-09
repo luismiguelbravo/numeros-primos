@@ -21,23 +21,23 @@ function esPrimo(numero) {
 }
 
 router.get('/numeros-primos', function(req, res, next) {
-  let numeroMaximo = req.query.maximo;
-  if(isNaN(numeroMaximo)){
+  let maximo = req.query.maximo;
+  if(isNaN(maximo)){
     res.status(500).json({ error: "El parámetro de entrada no es un número" });
   } else {
-    if (numeroMaximo < 2 ) {
+    if (maximo < 2 ) {
       res.status(500).json({ error: "El número de entrada debe ser mayor o igual a 2" });
     }
     let arrayDePrimos = [];
     let indice = 2;
-    while (indice <= numeroMaximo ) {
+    while (indice <= maximo ) {
       if (esPrimo(indice)) {
         arrayDePrimos[arrayDePrimos.length] = indice;
       }
       indice++;
     }
     console.log(arrayDePrimos.reverse())
-    res.send(arrayDePrimos);
+    res.send(arrayDePrimos.join());
   }
 });
 

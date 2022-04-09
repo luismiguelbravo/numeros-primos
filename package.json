@@ -5,7 +5,6 @@
   "scripts": {
     "start-old": "node ./bin/www",
     "start": "nodemon ./bin/www"
-
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
